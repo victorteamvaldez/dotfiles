@@ -1,0 +1,5 @@
+[user]
+        name = Victor Valdez
+        email = victormanuelvaldezblanco@gmail.com
+[credential]
+        helper = osxkeychain
