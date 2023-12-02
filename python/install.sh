@@ -5,7 +5,6 @@ if test ! $(which brew)
         exit 1
 fi
 
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 brew install pyenv
 brew install pyenv-virtualenv
