@@ -1,30 +1,31 @@
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
-#   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-#   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# Uncomment when we want to use nvm
+# export NVM_DIR="$HOME/.nvm"
+# source $(brew --prefix nvm)/nvm.sh
+# #   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# #   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-autoload -U add-zsh-hook
+# autoload -U add-zsh-hook
 
-load-nvmrc() {
+# load-nvmrc() {
 
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
+#   if [[ -f .nvmrc && -r .nvmrc ]]; then
 
-    nvm use
+#     nvm use
 
-  elif [[ -f .node-version && -r .node-version ]]; then
+#   elif [[ -f .node-version && -r .node-version ]]; then
 
-    nvm use $(cat .node-version)
+#     nvm use $(cat .node-version)
 
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+#   elif [[ $(nvm version) != $(nvm version default)  ]]; then
 
-    echo "Reverting to nvm default version"
+#     echo "Reverting to nvm default version"
 
-    nvm use default
+#     nvm use default
 
-  fi
+#   fi
 
-}
+# }
 
-add-zsh-hook chpwd load-nvmrc
+# add-zsh-hook chpwd load-nvmrc
 
-load-nvmrc
+# load-nvmrc

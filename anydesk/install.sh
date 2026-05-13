@@ -5,4 +5,5 @@ if test ! $(which brew)
         exit 1
 fi
 
-brew install --cask iterm2
+
+brew install --cask anydesk
