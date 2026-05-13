@@ -5,4 +5,4 @@ if test ! $(which brew)
         exit 1
 fi
 
-brew install --cask visual-studio-code
+brew install --cask maccy
