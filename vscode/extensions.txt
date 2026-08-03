@@ -1,0 +1,5 @@
+anthropic.claude-code
+expo.vscode-expo-tools
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+msjsdiag.vscode-react-native
